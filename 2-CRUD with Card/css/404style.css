@@ -1,0 +1,232 @@
+@media only screen and (min-width: 687px) {
+  body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background: #131313;
+    color: #fff;
+    font-size: 96px;
+    font-family: "Fira Mono", monospace;
+    letter-spacing: -7px;
+  }
+
+  div {
+    animation: glitch 1s linear infinite;
+  }
+
+  @keyframes glitch {
+    2%,
+    64% {
+      transform: translate(2px, 0) skew(0deg);
+    }
+    4%,
+    60% {
+      transform: translate(-2px, 0) skew(0deg);
+    }
+    62% {
+      transform: translate(0, 0) skew(5deg);
+    }
+  }
+
+  div:before,
+  div:after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+  }
+
+  div:before {
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  }
+
+  @keyframes glitchTop {
+    2%,
+    64% {
+      transform: translate(2px, -2px);
+    }
+    4%,
+    60% {
+      transform: translate(-2px, 2px);
+    }
+    62% {
+      transform: translate(13px, -1px) skew(-13deg);
+    }
+  }
+
+  div:after {
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  }
+
+  @keyframes glitchBotom {
+    2%,
+    64% {
+      transform: translate(-2px, 0);
+    }
+    4%,
+    60% {
+      transform: translate(-2px, 0);
+    }
+    62% {
+      transform: translate(-22px, 5px) skew(21deg);
+    }
+  }
+  h1 {
+    font-size: 30px;
+    letter-spacing: 11px;
+  }
+
+  .wrap {
+    margin: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button {
+    width: 140px;
+    height: 45px;
+    font-family: "Fira Mono", monospace;
+    letter-spacing: 2.5px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .button:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 15px 20px rgba(248, 248, 248, 0.53);
+    color: rgb(0, 0, 0);
+    transform: translateY(-7px);
+  }
+}
+
+
+@media only screen and (max-width: 687px) {
+  body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background: #131313;
+    color: #fff;
+    font-size: 50px;
+    font-family: "Fira Mono", monospace;
+    letter-spacing: -7px;
+  }
+
+  div {
+    animation: glitch 1s linear infinite;
+  }
+
+  @keyframes glitch {
+    2%,
+    64% {
+      transform: translate(2px, 0) skew(0deg);
+    }
+    4%,
+    60% {
+      transform: translate(-2px, 0) skew(0deg);
+    }
+    62% {
+      transform: translate(0, 0) skew(5deg);
+    }
+  }
+
+  div:before,
+  div:after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+  }
+
+  div:before {
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  }
+
+  @keyframes glitchTop {
+    2%,
+    64% {
+      transform: translate(2px, -2px);
+    }
+    4%,
+    60% {
+      transform: translate(-2px, 2px);
+    }
+    62% {
+      transform: translate(13px, -1px) skew(-13deg);
+    }
+  }
+
+  div:after {
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  }
+
+  @keyframes glitchBotom {
+    2%,
+    64% {
+      transform: translate(-2px, 0);
+    }
+    4%,
+    60% {
+      transform: translate(-2px, 0);
+    }
+    62% {
+      transform: translate(-22px, 5px) skew(21deg);
+    }
+  }
+  h1 {
+    font-size: 20px;
+    letter-spacing: 4px;
+  }
+
+  .wrap {
+    margin: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button {
+    width: 140px;
+    height: 45px;
+    font-family: "Fira Mono", monospace;
+    letter-spacing: 2.5px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .button:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 15px 20px rgba(248, 248, 248, 0.53);
+    color: rgb(0, 0, 0);
+    transform: translateY(-7px);
+  }
+}
